@@ -4,9 +4,9 @@ import sklearn
 
 from sklearn.ensemble import RandomForestClassifier, ExtraTreesClassifier, RandomForestRegressor, ExtraTreesRegressor
 from sklearn.tree import DecisionTreeRegressor, DecisionTreeClassifier, _tree
-from distutils.version import LooseVersion
-if LooseVersion(sklearn.__version__) < LooseVersion("0.17"):
-    raise Exception("treeinterpreter requires scikit-learn 0.17 or later")
+# from distutils.version import LooseVersion
+# if LooseVersion(sklearn.__version__) < LooseVersion("0.17"):
+#     raise Exception("treeinterpreter requires scikit-learn 0.17 or later")
 
 
 def _get_tree_paths(tree, node_id, depth=0):
